@@ -1,38 +1,33 @@
-# UDG Cactus App
+# Native OpenCV Plugin
 
-A Flutter application for managing and tracking cacti.
+A Flutter plugin that provides native OpenCV integration for image processing.
 
 ## Features
-- List and view details of different cacti.
-- Add, edit, and delete cacti records.
-- Track growth and care schedules.
+- Access OpenCV functions natively in Flutter.
+- Perform real-time image processing.
+- Works on Android.
 
 ## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/JoseSandoval7/udg_cactus_app.git
+1. Add the dependency in `pubspec.yaml`:
+   ```yaml
+   dependencies:
+     native_opencv:
+       git:
+         url: https://github.com/JoseSandoval7/native_opencv.git
    ```
-2. Navigate to the project directory:
-   ```sh
-   cd udg_cactus_app
-   ```
-3. Install dependencies:
+2. Run:
    ```sh
    flutter pub get
    ```
-4. Run the app:
-   ```sh
-   flutter run
+3. Import the package in your Dart code:
+   ```dart
+   import 'package:native_opencv/native_opencv.dart';
    ```
 
 ## Requirements
 - Flutter SDK
 - Dart
-- Android Studio or VS Code (optional)
-
-## Dependencies
-This project requires the following Flutter plugin:
-- [Native OpenCV](https://github.com/JoseSandoval7/native_opencv)
+- OpenCV installed on the target platform
 
 ## License
 MIT License
